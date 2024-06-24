@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSM Thane</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+    <link rel="stylesheet" href="vsm.css">
+</head>
+<body>
+    
+    <header>
+        <div class="nav">
+            <div><img src="https://vsmthane.org/wp-content/uploads/2022/02/vsmthane-logo.jpg" alt="vsmthane-logo"></div>
+            <i onclick="ShowMenu()" class="fa-solid fa-bars"></i>
+            <div id="navlinksdiv"><ul class="navlinks">
+                <li id="what-we-do"><a href="#">WHAT WE DO</a>
+                    <ul class="dropdown1" id="dropdown1">
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">MISSION & VISION</a></li>
+                        <li><a href="#">VSM MODEL</a></li>
+                        <li><a href="#">OUR FINANCIAL GOVERNENCE</a></li>
+                        <li><a href="#">OUR PARTNERS</a></li>
+                        <li><a href="#">OUR TEAM</a></li>
+                        <li><a href="#">KEY MILISTONES</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">IMPACT</a></li>
+                <li id="initiatives"><a href="#">INITIATIVES</a>
+                    <ul class="dropdown1" id="dropdown2">
+                        <li><a href="#">Career teams</a></li>
+                        <li><a href="#">Spoken English programs</a></li>
+                        <li><a href="#">Be Frank</a></li>
+                        <li><a href="#">Hostel</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Aptitude Tests & Mock Interviews</a></li>
+                        <li><a href="#">Financial literacy programs</a></li>
+                        <li><a href="#">Field Visits</a></li>
+                        <li><a href="#">Social camps</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">GET INVOLVED</a></li>
+                <li id="resources"><a href="#">RESOURCES</a>
+                    <ul class="dropdown1" id="dropdown3">
+                        <li><a href="#">Admission</a></li>
+                        <li><a href="#">Alumni Community</a></li>
+                        <li><a href="#">Annual Ahawal</a></li>
+                        <li><a href="#">VSM Connect Latest Issues</a></li>
+                        <li><a href="#">COVID Response</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </li>
+                <li id="media"><a href="#">MEDIA</a>
+                    <ul class="dropdown1" id="dropdown4">
+                        <li><a href="#">Latest Events</a></li>
+                        <li><a href="#">VSM in News</a></li>
+                        <li><a href="#">Gallery</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a id="donate" href="#">DONATE</a></li>
+            </ul></div>
+        </div>
+    </header>
+    <main>
+        <div class="herosection">
+            <img id="slideshowImages" src="https://vsmthane.org/wp-content/uploads/2024/04/Admission_Slider.jpeg" alt="">
+        </div>
+
+
+        <div class="headingsecion">
+            <div class="mainheading"><h1>Vidyadaan Sahayyak Mandal, Thane</h1></div>
+            <div class="headingdivider"></div>
+            <div class="subheading"><h4>Transformation Through Mentoring</h4></div>
+        </div>
+
+        <div class="what-we-do-section">
+            <div class="what-we-do-image"></div>
+            <div class="what-we-do-div">
+                <h2>What We Do</h2>
+                <div class="headingdivider"></div>
+                <div style="height: 5px;"></div>
+                <p id="whatwedopara1">Vidyadaan Sahayyak Mandal, Thane (VSM Thane) was founded in 2008 when a few like-minded people got together to help deserving students from Maharashtra’s rural areas who couldn’t pursue higher education due to weak financial position. Very early in its journey, VSM realised that it was the quality of help that mattered more than the quantity.</p>
+                <p id="whatwedopara2">That has been the abiding mantra of VSM ever since. VSM developed the unique mentor-student model to transform the students into confident, responsible, and independent members of the society</p>
+                <div style="height: 30px;"></div>
+                <button id="find-out-more">FIND OUT MORE <i class="fa-solid fa-greater-than"></i></button>
+            </div>
+        </div>
+
+
+        <div class="news-and-updates-section">
+            <div class="mainheading"><h2>Latest From VSM Thane</h2></div>
+            <div class="headingdivider"></div>
+            <div class="subheading"><h4>News & Updates</h4></div>
+        </div>
+
+        <div class="news">
+            <div class="updates">
+                <a class="updates-image ui1" href="#"></a>
+                <h4>VSM ADMISSIONS FOR ACADEMIC YEAR 2024-25 STARTED</h4>
+                <p>VSM's journey that started with one student has increased many fold over the years. 
+                    VSM admission process has enabled us to reach needy and deserving candidates across the state with deep penetration into rural Maharashtra. 
+                    With each passing year and increasing number of students approaching us, we are committed to make this process more robust and sustainable. 
+                    Please click below to know more about the VSM Admission process.</p>
+                <button class="more-info">MORE INFO</button>
+            </div>
+            <div class="updates">
+                <a class="updates-image ui2" href="#"></a>
+                <h4>ACHARYA ATRE KATTA, THANE FELICITATES VSM WITH ITS KRUTADNYATA PURASKAR</h4>
+                <div style="height: 5px;"></div>
+                <p>Acharya Atre Katta, Thane felicitates VSM with Krutadnyata Puraskar on May 4, 
+                    2024. As of now over 1300 personalities have graced the Katta to spread awareness about their field of work.
+                    Krutadnyata Puraskar is awareded to the personalities or organization who have been the torch bearers of making a change in the social fabric of our nation.
+                    Ms. Geeta Tai Shah humbly accepted the award and assured VSM's continued commitment in the field of education.</p>
+                <button class="more-info">MORE INFO</button>
+            </div>
+            <div class="updates">
+                <a class="updates-image ui3" href="#"></a>
+                <h4>VSM STUDENTS PARTICIPATING IN SOCIAL CAMPS TO INCULCATE SOCIAL SENSITIVITY</h4>
+                <p>In the month of May, VSM students will be participating in annual ‘Shramsanskar Chavni’,
+                     a 10 day long event at Somnath organized by Maharogi Seva Samiti that aims to inculcate and
+                      instill important values like work ethics, punctuality, time management, teamwork etc. in the campers. 
+                      Throughout the year, VSM students participate in various other social camps too like, One Week for Nation, 
+                      Sane Guruji Smarak Shibit to grow as a socially sensitive member of the society.</p>
+                <div style="height: 6px;"></div>
+                <button class="more-info">MORE INFO</button>
+            </div>
+            <div class="updates">
+                <a class="updates-image ui4" href="#"></a>
+                <h4>VSM CONNECT</h4>
+                <p>Through VSM Connect - Our Quarterly Newsletter - we keep our donors, students, mentors, and volunteers updated 
+                    about the latest and greatest happening at VSM, themed around career guidance teams, students' development workshops,
+                     various functional team initiatives, alumni corner, success stories and many more!</p>
+                <button class="more-info">MORE INFO</button>
+            </div>
+        </div>
+
+
+        <div class="news-and-updates-section">
+            <div class="mainheading"><h2>Our Growing Community</h2></div>
+            <div class="headingdivider"></div>
+            <div class="subheading"><h4>"Education Is Not Preparation For Life; Education Is Life Itself" - John Dewe</h4></div>
+        </div>
+
+
+        <div class="studentsnum">
+            <div class="studentdata">
+                <div class="data"><p class="counter">650</p><p>+</p></div>
+                <p>STUDENTS</p>
+            </div>
+            <div class="studentdata">
+                <div class="data">36</div>
+                <p>DISTRICTS OF MAHARASHTRA</p>
+            </div>
+            <div class="studentdata">
+                <div class="data"><p class="counter">750</p><p>+</p></div>
+                <p>ALUMNI</p>
+            </div>
+            <div class="studentdata">
+                <div class="data"><p class="counter">425</p><p>+</p></div>
+                <p>VOLUNTEERS</p>
+            </div>
+            <div class="studentdata">
+                <div class="data">6</div>
+                <p>BRANCHES IN MAHARASHTRA</p>
+            </div>
+        </div>
+
+
+        <div class="news-and-updates-section">
+            <div class="mainheading"><h2>Get Involved</h2></div>
+            <div class="headingdivider"></div>
+            <div class="subheading"><h4>"Alone We Can Do So Little; Together We Can Do So Much" - Helen Keller</h4></div>
+        </div>
+
+
+        <div class="involved-section">
+            <div class="involved">
+                <div class="involved-div"><div class="involved-black"><a href="#" class="involved-image in1"></a></div></div>
+                <div class="involved-heading"><h3>BECOME A DONOR</h3></div>
+                <p>Quality utilisation of every penny is at the core of VSM, and that’s why we strive hard to live up to the expectation of our Donors.</p>
+            </div>
+            <div class="involved">
+                <div class="involved-div"><div class="involved-black"><a href="#" class="involved-image in2"></a></div></div>
+                <div class="involved-heading"><h3>BECOME A VOLUNTEER</h3></div>
+                <p>We at VSM know that the volunteers are the ones responsible for serving our cause and taking our baton forward.</p>
+            </div>
+            <div class="involved">
+                <div class="involved-div"><div class="involved-black"><a href="#" class="involved-image in3"></a></div></div>
+                <div class="involved-heading"><h3>BECOME A MENTOR</h3></div>
+                <p>Being a “Mentor” (Karyakarta Palak) is a matter of great responsibility thus also a matter of great pride and satisfaction.</p>
+            </div>
+            <div class="involved">
+                <div class="involved-div"><div class="involved-black"><a href="#" class="involved-image in4"></a></div></div>
+                <div class="involved-heading"><h3>ASSIST A PROJECT</h3></div>
+                <p>VSM runs a program, where anyone can help in one of our ongoing projects with whatever time and skills that they have.</p>
+            </div>
+        </div>
+
+
+        <div class="news-and-updates-section">
+            <div class="mainheading"><h2>Our Partners</h2></div>
+            <div class="headingdivider"></div>
+            <div class="subheading"><h4>We Rise By Lifting Others</h4></div>
+        </div>
+
+        <div class="companys">
+            <div class="uppercompanys">
+                <div class="uppercompantiamge"><img src="https://vsmthane.org/wp-content/uploads/2022/07/VSMThane-Knexir-e1667420836196.png" alt="" ></div>
+                <div class="uppercompantiamge"><img src="https://vsmthane.org/wp-content/uploads/2022/03/Home-page-our-partners-logo-Samvardhan-e1647891743264.png" alt="" ></div>
+                <div class="uppercompantiamge"><img src="https://vsmthane.org/wp-content/uploads/2023/01/Home-page-our-partners-logo-Indexnine.jpeg" alt="" ></div>
+                <div class="uppercompantiamge"><img id="special-logo" src="https://vsmthane.org/wp-content/uploads/2022/12/Home-page-Our-Partners-logo-Dorf-Ketel.jpg" alt="" ></div>
+                <div class="uppercompantiamge"><img src="https://vsmthane.org/wp-content/uploads/2022/03/Mahindra-rise-logo.jpg" alt="" ></div>
+            </div>
+            <div class="lowercompanys">
+                <div class="uppercompantiamge"><img src="https://vsmthane.org/wp-content/uploads/2022/03/Mahindra-Finance-logo-e1648068712390.jpg" alt=""></div>
+                <div class="uppercompantiamge"><img src="https://vsmthane.org/wp-content/uploads/2022/11/Home-page-our-partners-logo-Indian-Bank-New-Logo-e1667420904769.png" alt=""></div>
+                <div class="uppercompantiamge"><img src="https://vsmthane.org/wp-content/uploads/2022/12/Home-page-our-partners-logo-Epiroc-Logo-e1671867685823.jpg" alt=""></div>
+                <div class="uppercompantiamge"><img src="https://vsmthane.org/wp-content/uploads/2022/03/Invential-logo.jpg" alt=""></div>
+                <div class="uppercompantiamge"><img src="https://vsmthane.org/wp-content/uploads/2022/11/Home-page-our-partners-logo-Josh-logo-e1667420956548.jpg" alt=""></div>
+            </div>
+        </div>
+
+        <div class="vedio-section">
+            <iframe class="vsm-vedio" src="https://www.youtube.com/embed/vlyQg33QuPE?si=1Iq-Qp8ENLlxxFcz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+
+        <div class="alumni-section">
+            <div id="alumni-thoughts"><i class="fa-solid fa-quote-left"></i><i><p id="thought"></p></i><i class="fa-solid fa-quote-right"></i></div>
+            <div class="alumni-info">
+                <img id="alumni-img" src="" alt="">
+                <p id="alumni-name"></p>
+                <p>VSM Alunmi</p>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footerlinks">
+                <div class="footerlinklists">
+                    <ul>
+                        <li><a href="#">What We Do</a></li>
+                        <li><a href="#">Our Impact</a></li>
+                        <li><a href="#">Initiatives</a></li>
+                        <li><a href="#">Get Involved</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerlinklists">
+                    <ul>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Admission</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Media</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerlinklists">
+                    <ul>
+                        <li><p>Vidyadaan Sahayyak Mandal (VSM Thane)
+                            Office No. 2, 1st Staircase, 1st floor, Khopat ST Stand building, Khopat, Thane, Maharashtra, India - 400602</p></li>
+                        <li><p>+91-9987437446</p></li>
+                        <li><p>vsmthane@gmail.com</p></li>
+                        <li><div class="socialmedia">
+                            <img src="https://vsmthane.org/wp-content/plugins/ultimate-social-media-icons/images/icons_theme/default/default_facebook.png" alt="">
+                            <img src="https://vsmthane.org/wp-content/plugins/ultimate-social-media-icons/images/icons_theme/default/default_twitter.png" alt="">
+                            <img src="https://vsmthane.org/wp-content/plugins/ultimate-social-media-icons/images/icons_theme/default/default_youtube.png" alt="">
+                            <img src="https://vsmthane.org/wp-content/plugins/ultimate-social-media-icons/images/icons_theme/default/default_linkedin.png" alt="">
+                            <img src="https://vsmthane.org/wp-content/plugins/ultimate-social-media-icons/images/icons_theme/default/default_instagram.png" alt="">
+                        </div></li>
+                    </ul>
+                </div>
+                <div class="footerlinklists">
+                    <ul>
+                        <li><a href="#">If you wish to pay through UPI</a></li>
+                        <li><img style="height: 170px;" src="https://vsmthane.org/wp-content/uploads/2022/03/Picture1.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footercopyright">
+                <p>© 2024 VSM THANE - ALL RIGHTS RESERVED </p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="vsm.js"></script>
+</body>
+</html>
