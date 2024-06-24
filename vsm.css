@@ -1,0 +1,682 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto Condensed, sans-serif;
+    letter-spacing: .1rem;
+    line-height: 1.5;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+    
+    /* navigation bar */
+
+.nav{
+    height: 7rem;
+    width: 100vw;
+    padding: 0% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0%;
+}
+.nav i{
+    font-size: 3.5rem;
+    color: black;
+    display: none;
+}
+
+.nav img{
+    height: 6.2rem;
+}
+
+.navlinks{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 7rem;
+    width: 100%;
+}
+.navlinks li{
+    height: 100%;
+    align-content: center;
+    position: relative;
+}
+
+.navlinks li a{
+    height: 100%;
+    display: block;
+    align-content: center;
+    padding: 0px 1.4rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #36353c;
+    text-decoration: none;
+    transition: 1s;
+    text-transform: uppercase;
+}
+
+.navlinks a:hover{
+    color: #2393d2;
+}
+
+#donate{
+    height: 3.7rem;
+    margin: 1.7rem 0rem;
+    padding: 0px 1.4rem;
+    background-color: #f4821f;
+    color: #ffffff;
+    border-radius: 1.5rem;
+    transition: 0.3s;
+}
+#donate:hover{
+    color: #2393d2;
+    text-decoration: underline;
+}
+
+
+.dropdown1{
+    width: 15rem;
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+}
+.dropdown1 li{
+    width: 100%;
+}
+.dropdown1 li a{
+    display: block;
+    height: 100%;
+    padding: 10px 10px;
+    color: #787e83;
+}
+.dropdown1 li a:hover{
+    background-color: #2393d2;
+    color: #fff;
+}
+#what-we-do:hover #dropdown1{
+    display: block;
+}
+
+#initiatives:hover #dropdown2{
+    display: block;
+}
+
+#resources:hover #dropdown3{
+    display: block;
+}
+
+#media:hover #dropdown4{
+    display: block;
+}
+
+
+
+         /* hero section  */
+
+
+.herosection img{
+    width: 100%;
+    height: 100%;
+}
+
+#slideshowImages{
+    transition: all 2s;
+}
+
+
+.headingsecion{
+    width: 100%;
+    height: 21.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.headingdivider{
+    width: 6rem;
+    height: .5rem;
+    background-color: #f4821f;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.mainheading{
+    color: #2393d2;
+    font-size: 1.6rem;
+}
+
+.subheading{
+    color: #f4821f;
+    font-size: 1.5rem;
+}
+
+
+       /* what we do section */
+
+
+.what-we-do-section{
+    height: 60rem;
+    width: 100%;
+    display: flex;
+    border: 0.5px solid #787e8333;
+}
+.what-we-do-image{
+    height: 100%;
+    width: 65%;
+    background-image: url(https://vsmthane.org/wp-content/uploads/2022/03/what-we-do-1-scaled-e1648135675255.jpg);
+    background-size: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.what-we-do-div{
+    width: 35%;
+    height: 100%;
+    padding: 5%;
+    float: right;
+    text-align: justify;
+}
+.what-we-do-div h2{
+    color: #2393d2;
+}
+
+#whatwedopara1{
+    font-size: 1.4rem;
+    margin: 1.4rem 0rem;
+}
+
+#whatwedopara2{
+    font-size: 1.4rem;
+    margin: 1.4rem 0 0;
+}
+
+#find-out-more{
+    height: 4.6rem;
+    width: 20.6rem;
+    background-color: #2393d2;
+    color: #fff;
+    border: none;
+    border-radius: 2.3rem;
+    font-size: 1.23rem;
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
+}
+
+#find-out-more:hover{
+    background-color: #333;
+}
+
+
+
+
+    /* news and update section */
+
+.news-and-updates-section{
+    width: 100%;
+    height: 21.2rem;
+    padding: 0% 10%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.news{
+    width: 100%;
+    height: auto;
+    padding: 0% 10%;
+    display: flex;
+    border-bottom: 0.5px solid #787e8333;
+}
+
+.updates{
+    flex: 1 1 23rem;
+    margin: 0.2px 2rem ;
+}
+.updates-image{
+    display:block;
+    aspect-ratio: 1/1;
+    max-width: 27rem;
+    margin: .5rem auto;
+    background-image: url(https://vsmthane.org/wp-content/uploads/2022/05/Admission-process-Steps-270x270.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.updates-image:hover{
+    transform: scale(1.05);
+}
+
+.ui2{
+    background-image: url(https://vsmthane.org/wp-content/uploads/2024/05/Acharya_Atre_katta_Falicitation-270x270.jpg);
+}
+.ui3{
+    background-image: url(https://vsmthane.org/wp-content/uploads/2022/05/04-Social-Camp-Bandhara-300x300.jpg);
+}
+.ui4{
+    background-image: url(https://vsmthane.org/wp-content/uploads/2024/04/Resources_VSM-Connect-April-2024-1.jpg-1-270x270.jpg);
+}
+
+.updates h4{
+    letter-spacing: .1rem;
+    font-size: 1.35rem;
+    margin-bottom: 2rem;
+}
+
+.updates p{
+    font-size: 1.32rem;
+    font-weight: 600;
+    color: #392c2c;
+    margin-bottom: 4rem;
+}
+
+.more-info{
+    height: 3.4rem;
+    width: 10.5rem;
+    border-radius: .3rem;
+    background-color: #2393d2;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.more-info:hover{
+    background-color: #333;
+}
+
+.studentsnum{
+    height: 20.6rem;
+    background-color: #30b9e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.studentdata{
+    width: 100%;
+    height: 8.56rem;
+    border-right: 1px solid rgba(255, 255, 255,0.2);
+    color: #ffffff;
+    font-weight: 700;
+    padding: 0px 1.5rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.studentdata div{
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.studentdata span{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+
+/* ************************** GET INVOLVD *************************** */
+
+.involved-section{
+    height: auto;
+    border-bottom: 0.5px solid #787e8333;
+    padding: 0% 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.involved{
+    flex: 1 1 21rem;
+    margin: 0px 1.5rem 3.5rem 1.5rem;
+    border: 2px solid rgba(179, 178, 178, 0.2);
+    box-shadow: 0px 0px 3px rgba(179, 178, 178, 0.2);
+}
+
+.involved-image{
+    display: block;
+    aspect-ratio: 1/1;
+    max-width: 20rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgb(168, 165, 165);
+    margin: 0 auto;
+    transition: 0.3s; 
+}
+.involved-image:hover{
+    opacity: 0.8;
+    background-blend-mode: multiply;
+}
+
+
+.in1{
+    background-image: url(https://vsmthane.org/wp-content/uploads/2022/03/donor-180x180.png);
+}
+.in2{
+    background-image: url(https://vsmthane.org/wp-content/uploads/2022/03/volunteer-180x180.png);
+}
+.in3{
+    background-image: url(https://vsmthane.org/wp-content/uploads/2022/04/Become-a-mentor-e1650993727540-180x180.jpeg);
+}
+.in4{
+    background-image: url(https://vsmthane.org/wp-content/uploads/2022/03/project-180x180.png);
+}
+
+.involved-heading{
+    color: #787e83;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.involved p{
+    text-align: center;
+    margin: .5rem 1rem 2rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+
+       /* company section   */
+
+
+.companys{
+    border-bottom: 0.05rem solid #787e8333;
+    padding: 3% 10%;
+}
+
+.uppercompanys{
+    display: flex;
+    margin-bottom: 5%;
+    height: 40%;
+}
+
+.uppercompantiamge{
+    width: 100%;
+    margin: 0% 3%;
+    align-items: center;
+}
+.uppercompantiamge img{
+    width: 100%;
+}
+.lowercompanys{
+    display: flex;
+    margin: 0% 3%;
+}
+    
+
+   /* vedio section  */
+
+
+.vedio-section{
+    width: 100%;
+    height: 37rem;
+    background-color: #30b9e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vsm-vedio{
+    width: 56rem;
+    height: 31.5rem;
+}
+
+
+    /* alumni section */
+
+.alumni-section{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    transition: 2s;
+}
+
+.fa-solid{
+    color: #f4821f;
+}
+
+#alumni-thoughts{
+    text-align: center;
+    display: flex;
+    color: #30b9e6;
+    margin: 2.5% 0%;
+    width: 77.5rem;
+    height: 100%;
+    transition: 2s;
+}
+#thought{
+    font-size: 1.85rem;
+    transition: 2s;
+}
+
+.alumni-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f4821f;
+    transition: 2s;
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+}
+.alumni-info img{
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.alumni-info p{
+    margin-right: 1rem;
+}
+
+#alumni-name{
+    font-weight:bolder;
+}
+
+.footerlinks{
+    display: flex;
+    padding: 3% 10%;
+    background-color: black;
+    transition: 1s;
+}
+
+.footerlinklists{
+    width: 100%;
+    color: #ffffff;
+    padding-right: 5%;
+    transition: 1s;
+    font-size: 1.35rem;
+}
+
+.footerlinklists li{
+    list-style-type: none;
+    padding-bottom: 2%;
+}
+
+.footerlinklists a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.socialmedia{
+    display: flex;
+}
+
+.socialmedia img{
+    width: 4rem;
+    height: 4rem;
+    padding: .2rem .2rem;
+    cursor: pointer;
+}
+
+.footercopyright{
+    padding: 1% 10%;
+    background-color: black;
+    color: #787e83;
+    font-size: 1rem;
+}
+
+
+
+
+
+/* **********************     responsive   ************************ */
+
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+
+    .herosection img{
+        margin-top: 7rem;
+    }
+}
+
+@media (max-width:979px) {
+    .news{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:768px){
+    .nav{
+        height: 5.5rem;
+    }
+    .nav img{
+        height: 4.5rem;
+    }
+
+    .nav i{
+        display: block;
+    }
+    #navlinksdiv{
+        display: none;
+    }
+
+    .navlinks li{
+        margin: 1.2rem auto;
+    }
+    .mainheading{
+        font-size: 1.2rem;
+    }
+
+    .what-we-do-section{
+        flex-direction: column;
+    }
+
+    .what-we-do-section{
+        height: auto;
+    }
+
+    .what-we-do-image{
+        width: 90%;
+        height: 42rem;
+        margin: 0 4rem 0 4rem;
+        background-size: contain;
+        background-attachment: scroll;
+    }
+
+    .what-we-do-div{
+        width: 100%;
+    }
+
+    .studentsnum{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .studentdata{
+        margin: 2.2rem 0 1rem 0;
+    }
+
+    .companys{
+        height: auto;
+    }
+
+    .uppercompanys{
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .uppercompantiamge{
+        margin: auto;
+    }
+
+    #special-logo{
+        height: auto;
+        width: 65vw;
+    }
+
+    .uppercompanys img{
+        height: 10rem;
+        display: block;
+        width: auto;
+        margin: auto;
+    }
+
+    .lowercompanys{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .lowercompanys div{
+        margin-bottom: 2rem;
+    }
+
+    .vsm-vedio{
+        width: 50rem;
+        height: 28rem;
+    }
+    #alumni-thoughts{
+        width: 80vw;
+    }
+
+    .footerlinks{
+        flex-direction: column;
+    }
+    .footerlinklists{
+        margin-bottom: 3rem;
+    }
+
+}
+
+@media (max-width:617px){
+    .what-we-do-image{
+        width: 90%;
+        height: 35rem;
+    }
+
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+
+    .what-we-do-image{
+        width: 90%;
+        height: 25rem;
+    }
+}
